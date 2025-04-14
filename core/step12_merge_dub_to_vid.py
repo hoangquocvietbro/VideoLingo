@@ -77,7 +77,7 @@ def merge_video_audio():
 
     if check_gpu_available():
         rprint("[bold green]Using GPU acceleration...[/bold green]")
-        cmd.extend(['-map', '[v]', '-map', '[a]', '-c:v', 'h264_nvenc'])
+        cmd.extend(['-map', '[v]', '-map', '[a]', '-c:v', 'libx264'])
     else:
         cmd.extend(['-map', '[v]', '-map', '[a]'])
     
